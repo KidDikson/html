@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My World</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Logo</a>
+      <nav class="navbar">
+        <a class="name" href="#">Home</a>
+        <a class="name" href="city/city.html">City</a>
+        <a class="name" href="culture.html">Culture</a>
+        <a class="name" href="contact/contact.html">Contact</a>
+        <a href="" class="myname">Mikail Osmanov</a>
+      </nav>
+    </header>
+    <h1>Hobbilerim</h1>
+    <div class="card">
+      <img src="index/img/1.jpg" class="card-img-top myimg" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Film/dizi</h5>
+        <p class="card-text textCard">
+          Film izlemek, gerçeklikten kaçmamı ve sağlayan büyüleyici bir deneyim.
+          Zorlayıcı dramalardan iç açıcı , heyecan verici aksiyon dolu
+          maceralardan düşündürücü belgesellere kadar her film, hayal gücümü
+          cezbeden benzersiz bir hikaye anlatımı, görseller ve performans
+          karışımı sunuyor.
+        </p>
+      </div>
+    </div>
+    <div class="card2">
+      <img src="/index/img/2.jpg" class="card-img-top myimg2" alt="..." />
+      <div class="card-body">
+        <h4 class="card-title">Muzik</h4>
+        <p class="card-text text_Card">
+          Müzik dinlemek, günlük hayatın koşuşturmacasından kaçmamı sağlıyor,
+          zihnim ve ruhum için çok ihtiyaç duyulan bir dinlenme sağlıyor.
+        </p>
+      </div>
+    </div>
+    <div class="card3">
+      <img src="index/img/3.jpg" class="card-img-top myimg3" alt="..." />
+      <div class="card-body">
+        <h3 class="card-title">voleybol</h3>
+        <p class="card-text text__Card">
+          Voleybol oynamak bana sadece fiziksel bir güc sağlamakla kalmıyor,
+          aynı zamanda zihinsel olarak da beni zorluyor. Takım arkadaşlarımla
+          hızlı refleksler, stratejik düşünme ve etkili iletişim gerektirir.
+        </p>
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "poppins", sans-serif;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      background: url(index/index.css/listia_liniia_neon_139772_1920x1080.jpg)
+        no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+      padding: 20px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header a {
+      color: #fff;
+      text-transform: capitalize;
+    }
+    .header .logo {
+      text-decoration: none;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .header .navbar .name {
+      margin-left: 40px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      position: relative;
+    }
+    .navbar .name::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 2px;
+      background: #fff;
+      width: 00%;
+      transition: 0.3s;
+    }
+    .navbar a:hover::before {
+      width: 100%;
+    }
+    .myname {
+      cursor: default;
+      font-size: 25px;
+      border: none;
+      margin-left: 40px;
+      text-decoration: none;
+    }
+
+    h1 {
+      position: fixed;
+      font-size: 45px;
+      color: #fff;
+      left: 14.5em;
+      top: 2.5em;
+      display: flex;
+      letter-spacing: 2px;
+      transition: 0.25s;
+    }
+    h1:hover {
+      letter-spacing: 5px;
+    }
+    .card {
+      position: absolute;
+      width: 25%;
+      border-radius: 20px;
+      left: 5em;
+      top: 10em;
+      background-color: #a43820;
+    }
+    .myimg {
+      width: 100%;
+      height: 50vh;
+      border-radius: 20px;
+    }
+    .textCard {
+      background-color: #a43820;
+      color: #fff;
+      width: 320px;
+    }
+    h5 {
+      position: absolute;
+      font-size: 32px;
+      text-align: center;
+      bottom: 6em;
+      left: 4em;
+      color: #fff;
+    }
+    .card-body {
+      padding: 50px;
+    }
+    .card2 {
+      position: absolute;
+      width: 28%;
+      border-radius: 20px;
+      left: 34.5em;
+      top: 13em;
+      background-color: #693d3d;
+    }
+    .myimg2 {
+      width: 100%;
+      height: 50vh;
+      border-radius: 20px;
+    }
+    .text_Card {
+      background: #693d3d;
+      color: #fff;
+    }
+    h4 {
+      position: absolute;
+      font-size: 32px;
+      text-align: center;
+      bottom: 4.3em;
+      left: 4.5em;
+      color: #fff;
+    }
+    .card-body {
+      padding: 50px;
+    }
+    .card3 {
+      position: absolute;
+      width: 25%;
+      border-radius: 20px;
+      left: 67em;
+      top: 10em;
+      background-color: #ba5536;
+    }
+    .myimg3 {
+      width: 100%;
+      height: 50vh;
+      border-radius: 20px;
+    }
+    .text__Card {
+      background: #ba5536;
+      color: #fff;
+    }
+    h3 {
+      position: absolute;
+      font-size: 32px;
+      text-align: center;
+      bottom: 5.5em;
+      left: 4em;
+      color: #fff;
+    }
+    .card-body {
+      padding: 50px;
+    }
+  </style>
+</html>
